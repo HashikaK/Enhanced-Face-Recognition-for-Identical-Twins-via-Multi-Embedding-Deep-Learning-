@@ -10,7 +10,6 @@ The system leverages:
 * **InceptionResnetV1 (FaceNet)** for feature extraction
 * **Multi-Embedding Validation** to improve recognition robustness
 
----
 
 ## Key Features
 
@@ -21,7 +20,6 @@ The system leverages:
 * Image upload-based verification
 * SQLite database for embedding storage
 
----
 
 ## Methodology
 
@@ -34,7 +32,6 @@ The system leverages:
    * Similarity threshold
    * Margin between top matches
 
----
 
 ## Dataset Structure
 
@@ -50,7 +47,6 @@ dataset/train/
 
 Each person should have **multiple images (recommended: 5+)**.
 
----
 
 ## Installation
 
@@ -60,7 +56,6 @@ cd twin-face-recognition
 pip install -r requirements.txt
 ```
 
----
 
 ##  How to Run
 
@@ -76,7 +71,6 @@ python app/main.py
 * Upload: http://localhost:5000/upload
 * Webcam: http://localhost:5000/webcam
 
----
 
 ## Output
 
@@ -84,7 +78,6 @@ python app/main.py
 * Ambiguous detection for twins when margin is low
 * Unknown classification for low similarity
 
----
 
 ##  Reproducibility
 
@@ -92,14 +85,12 @@ python app/main.py
 * Automatic dataset loading into SQLite database
 * Deterministic embedding comparison via cosine similarity
 
----
 
 ## Code Availability
 
 This code is directly associated with the manuscript submitted to *The Visual Computer*.
 Please cite the paper if you use this work.
 
----
 
 ## Future Work
 
@@ -108,10 +99,8 @@ Please cite the paper if you use this work.
 * Transformer-based embeddings
 * Deployment optimization (TensorRT)
 
----
 
 ##  Author
 
 Hashika K, Harismita V, Swetha S 
 
----
